@@ -41,7 +41,7 @@ export default function Home() {
           <img src="/assets/sarthak.jpg" alt="Portrait of Sarthak Walke" width="900" height="1125" fetchPriority="high" /></motion.div>
         <motion.div style={{ y: gy }}>
           <motion.p className="hi" initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: .7, ease, delay: .3 }}>Hey, I am</motion.p>
-          <h1 aria-label="hello"><Letters text="Sarthak Walke" delay={.45} /></h1>
+          <h1 aria-label="Sarthak Walke"><Letters text="Sarthak Walke" delay={.45} /></h1>
           <motion.p className="lead" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .8, ease, delay: 1.3 }}>Mechanical engineering student in Pune, applying machine learning to fault detection in rotating machinery and to aerodynamic design.</motion.p>
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .8, ease, delay: 1.5 }}>
             <a className="btn" href="#projects"><span>View projects</span></a><a className="btn ghost" href="/assets/Sarthak_Walke_Resume.pdf"><span>Download resume</span></a></motion.div>
@@ -51,7 +51,7 @@ export default function Home() {
     </div>
     <div className="ticker" aria-hidden="true"><div className="track">{[...ticker, ...ticker].map((t, i) => <span key={i}>{t}</span>)}</div></div>
     <Sec id="about" title="About"><motion.div className="about" variants={st} initial="hidden" whileInView="show" viewport={vp}>
-      <motion.p variants={rv}>I study mechanical engineering at A.I.S.S.M.S. College of Engineering, with a grounding in thermodynamics, fluid mechanics and IC engines. Alongside coursework I build with Python and machine learning to solve mechanical and industrial problems.</motion.p>
+      <motion.p variants={rv}>I study mechanical engineering at AISSMS College of Engineering, with a grounding in thermodynamics, fluid mechanics and IC engines. Alongside coursework I build with Python and machine learning to solve mechanical and industrial problems.</motion.p>
       <motion.p variants={rv}>My main interests are predictive maintenance, robotics and automation, intelligent manufacturing and machine learning for fault detection.</motion.p>
       <motion.p variants={rv} className="mut">Open to an internship of 8 to 10 weeks, flexible on dates. I am in 3rd year, 5th semester.</motion.p></motion.div></Sec>
     <Sec id="skills" title="Skills"><Cards>{skills.map(([h, d]) => <Card key={h}><h3>{h}</h3><p className="mut">{d}</p></Card>)}</Cards></Sec>
