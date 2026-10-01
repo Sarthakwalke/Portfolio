@@ -41,7 +41,7 @@ export default function Home() {
           <img src="/assets/sarthak.jpg" alt="Portrait of Sarthak Walke" width="900" height="1125" fetchPriority="high" /></motion.div>
         <motion.div style={{ y: gy }}>
           <motion.p className="hi" initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: .7, ease, delay: .3 }}>Hey, I am</motion.p>
-          <h1 aria-label="Sarthak Walke"><Letters text="Sarthak Walke" delay={.45} /></h1>
+          <h1 aria-label="hello"><Letters text="Sarthak Walke" delay={.45} /></h1>
           <motion.p className="lead" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .8, ease, delay: 1.3 }}>Mechanical engineering student in Pune, applying machine learning to fault detection in rotating machinery and to aerodynamic design.</motion.p>
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .8, ease, delay: 1.5 }}>
             <a className="btn" href="#projects"><span>View projects</span></a><a className="btn ghost" href="/assets/Sarthak_Walke_Resume.pdf"><span>Download resume</span></a></motion.div>
@@ -60,6 +60,6 @@ export default function Home() {
       <Card><h3>Leadership and certifications</h3><p className="mut">Media Head, Google Developer Groups, AISSMS COE chapter.<br />CAD Design Course (Udemy). MATLAB Onramp (MathWorks).</p></Card></Cards></Sec>
     <Sec id="contact" title="Contact"><motion.div variants={st} initial="hidden" whileInView="show" viewport={vp}>
       <motion.p variants={rv}>For internships and project work, reach me on LinkedIn or by phone.</motion.p>
-      <motion.p variants={rv}><a className="btn" href="https://www.linkedin.com/in/sarthak-walke-0a1617433" rel="noopener"><span>LinkedIn</span></a><a className="btn ghost" href="https://github.com/Sarthakwalke" rel="noopener"><span>GitHub</span></a><a className="btn ghost" href="tel:+917083200880"><span>+91 70832 00880</span></a></motion.p></motion.div></Sec>
+      <motion.p variants={rv}><a className="btn" href="https://www.linkedin.com/in/S-walke-0a1617433" rel="noopener"><span>LinkedIn</span></a><a className="btn ghost" href="https://github.com/Sarthakwalke" rel="noopener"><span>GitHub</span></a><a className="btn ghost" href="tel:+917083200880"><span>+91 70832 00880</span></a></motion.p></motion.div></Sec>
   </main></Shell>)
 }
